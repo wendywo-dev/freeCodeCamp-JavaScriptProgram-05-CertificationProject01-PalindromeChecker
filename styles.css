@@ -1,0 +1,100 @@
+:root {
+  --light-blue: #85dcb0;
+  --dark-blue: #41b3a3;
+  --white: #fff;
+  --dark-cyan: #2e5c56;
+  --orange: #e9650d;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-blue);
+}
+
+body,
+input,
+button {
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.container {
+  background-color: var(--dark-blue);
+  width: min(100vw, 500px);
+  min-height: 120px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 25px;
+  margin: 50px 0;
+  -webkit-box-shadow: 13px 10px 17px -14px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 13px 10px 17px -14px rgba(0, 0, 0, 0.2);
+  box-shadow: 13px 10px 17px -14px rgba(0, 0, 0, 0.2);
+}
+
+.user-input-palindrome {
+  background-color: var(--dark-blue);
+  width: 320px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid var(--white);
+  margin: 10px;
+}
+
+.user-input-palindrome:focus {
+  outline: none;
+  caret-color: var(--white);
+}
+
+.check-button {
+  width: 100px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: var(--orange);
+  border: none;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.result-div {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.exlpain-palindrome-container {
+  line-height: 1.5em;
+  width: min(80vw, 450px);
+  color: var(--dark-cyan);
+}
+
+.palindrome-definition dfn {
+  font-weight: bold;
+}
